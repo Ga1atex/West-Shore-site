@@ -10,7 +10,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   color: #fff;
-  background-color: #171919;
+  background-color: $bg-color;
   text-transform: uppercase;
 }
 
@@ -106,21 +106,21 @@ h5 {
   position: relative;
 
   span {
-
     display: inline-block;
     font-size: 200px;
     line-height: 0.78em;
-    transform: translateX(-50px);
+    transform: translateX(-12%); // -50px
     color: rgba(#fff, .02);
     font-weight: 800;
   }
 
   h2 {
     position: absolute;
-    left: 245px;
-    top: -35px;
+    // left: 245px;
+    left: 17.014%;
+    // top: -35px;
+    top: -22.44%;
     margin: 0;
-    font-size: 80px;
     // line-height: 1.15em;
     // line-height: 1.95em;
     // color: rgba(#fff, 1);
@@ -139,8 +139,10 @@ h5 {
 
 .section-subtitle {
   &__head {
-    padding-right: 10px;
+    padding-right: 8px;
     padding-top: 8px;
+    font-size: 40px;
+    font-weight: 800;
   }
 
   &--right {
@@ -150,11 +152,19 @@ h5 {
 
   &--left {
     text-align: left;
-    padding-left: 130px;
+    // padding-left: 130px;
+    // padding-left: 9.6%;
+    padding-left: 9.028%;
   }
 
   span {
     font-weight: 200;
+  }
+
+  &__icon {
+    display: inline-block;
+    padding-left: .6em;
+    // vertical-align: middle;
   }
 }
 
@@ -170,16 +180,19 @@ h5 {
     content: '';
     position: absolute;
     width: 80px;
+    // width: 33.035%;
     height: 1px;
     background-color: #fff;
     top: 50%;
   }
 
   &--left {
-    padding-left: 103px;
+    // padding-left: 103px;
+    padding-left: 4.682em;
 
     &::before {
       left: 0;
+
     }
   }
 
@@ -190,4 +203,85 @@ h5 {
       right: 0;
     }
   }
+}
+
+.star-list {
+  display: inline-flex;
+  // padding-left: 25px;
+  padding-left: .6em;
+
+  &__item {
+    display: inline-block;
+    // margin-left: -21px;
+    margin-left: -.525em;
+  }
+
+  &__img {
+    // vertical-align: text-bottom;
+    width: 1.35em;
+  }
+}
+
+
+.quantity {
+  // position: relative;
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  // width: 45px;
+  width: 1.125em;
+  // height: 42px;
+  height: 1em;
+  // float: left;
+  display: inline-block;
+  // padding: 0 5px;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: .9em;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  font-weight: 400;
+}
+
+.quantity-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  user-select: none;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 112.5%;
+}
+
+.quantity-button.quantity-up {
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  right: 30px;
 }
