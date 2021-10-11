@@ -146,4 +146,27 @@ $(function () {
   $('.menu-btn').on('click', function (event) {
     $('.menu').toggleClass('menu--active');
   });
+
+  // changeHeadlineSide();
+  // function changeHeadlineSide() {
+  //   if (document.documentElement.clientWidth <= 768) {
+  //     for (let surfboardHeadline of document.querySelectorAll('.surfboard-box__content.headline.headline--left')) {
+  //       surfboardHeadline.classList.remove('headline--left');
+  //       surfboardHeadline.classList.add('headline--right');
+  //     }
+  //   }
+  //   else {
+  //     let box1 = document.querySelector('.surfboard-box--1').querySelector('.headline--right');
+  //     let box2 = document.querySelector('.surfboard-box--2').querySelector('.headline--right');
+  //     if (box1) {
+  //       box1.classList.remove('headline--right');
+  //       box1.classList.add('headline--left');
+  //     } else if (box2) {
+  //       box2.classList.remove('headline--right');
+  //       box2.classList.add('headline--left');
+  //     }
+  //   }
+  // }
+
+  // window.addEventListener('resize', changeHeadlineSide);
 });

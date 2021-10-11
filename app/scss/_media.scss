@@ -147,6 +147,22 @@
       // padding: 0;
     }
   }
+
+  .surfboard-box {
+    &__content {
+      &.headline::before {
+        width: 20px;
+      }
+
+      &.headline--left {
+        padding-left: 1.32em;
+      }
+
+      &.headline--right {
+        padding-right: 1.32em;
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -334,6 +350,37 @@
       padding: 0px 4%;
     }
   }
+
+  .shop {
+    .btn-box {
+      text-align: center;
+    }
+
+    &__star-list {
+      justify-content: center;
+    }
+
+    &__slider-inner {
+      flex-direction: column;
+      align-items: center;
+      // text-align: center;
+      padding-left: 0;
+      gap: 30px;
+    }
+
+    &__extras {
+      text-align: center;
+      min-width: 339px;
+    }
+  }
+
+  .surfboard-box {
+    &__content {
+      width: 339px;
+      // top: -5px;
+      top: -.4em;
+    }
+  }
 }
 
 @media (max-width: 899px) {
@@ -517,11 +564,19 @@
     }
   }
 
-  .shop {
-    &__slider-inner {
-      flex-wrap: wrap;
-      gap: 20px;
+  .surfboard-box__content {
+    width: 223px;
+    // top: -21px;
+
+    // padding-right: 46px;
+    &.headline {
+      font-size: 18px;
     }
+
+    &.headline--right {
+      left: -227px;
+    }
+
   }
 }
 
@@ -571,6 +626,35 @@
   .holder {
     .slider-arrows {
       top: 120px;
+    }
+  }
+
+  .shop {
+    &__extras {
+      min-width: auto;
+    }
+  }
+
+  .surfboard-box {
+    &--2 {
+      .surfboard-box__content {
+        left: 0;
+        top: 1.4em;
+      }
+    }
+
+    &__content {
+      &.headline::before {
+        display: none;
+      }
+
+      &.headline--left {
+        padding-left: 0;
+      }
+
+      &.headline--right {
+        padding-right: 0;
+      }
     }
   }
 }
@@ -696,6 +780,28 @@
       font-size: 24px;
     }
 
+  }
+
+  .surfboard-box {
+
+    &--2 {
+      .surfboard-box__content {
+        left: 0;
+        top: 1.25em;
+      }
+    }
+
+    &__content {
+      width: 120px;
+
+      &.headline {
+        font-size: 14px;
+      }
+
+      &.headline--right {
+        left: -125px;
+      }
+    }
   }
 
   .footer {
