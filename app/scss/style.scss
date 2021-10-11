@@ -420,6 +420,7 @@
     box-shadow: 0px 0px 20px rgba($aqua, 0.837777);
     position: relative;
 
+
     &::before {
       display: none;
       content: '';
@@ -445,6 +446,7 @@
     transform: translateX(calc(12px - 50%));
     bottom: 44px;
     position: absolute;
+    z-index: 1;
   }
 
   &__content-title {
@@ -530,6 +532,11 @@
   &--5 {
     top: 238px;
     left: 46.67%;
+
+    .slider-marker__content {
+      transform: translate(calc(6% + 12px), 27%);
+    }
+
   }
 
   &--6 {

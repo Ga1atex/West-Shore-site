@@ -169,4 +169,6 @@ $(function () {
   // }
 
   // window.addEventListener('resize', changeHeadlineSide);
+
+  new WOW().init();
 });

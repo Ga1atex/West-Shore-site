@@ -12,6 +12,8 @@ body {
   color: #fff;
   background-color: $bg-color;
   text-transform: uppercase;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 a {
